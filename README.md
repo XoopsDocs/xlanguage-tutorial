@@ -12,7 +12,22 @@
 
 ## Module Purpose 
 
-This module is for .....
+This module, xLanguage (eXtensible Multi-language content and character encoding Management plugin) handles displaying contents of different languages, like English, French and Chinese. Character encoding management also handles contents of different encoding sets for one language, like GB2312 (Chinese Simplified) and BIG5 (Chinese Traditional) for Chinese.  
+
+# What xlanguage CAN do
+1 displaying content of specified language based on user's dynamic choice 
+2 converting content from one character encoding set to another
+
+# What xlanguage canNOT do
+1 xlanguage does NOT have the ability of translating content from one language to another one. You have to input contents of various languages by yourself 
+2 xlanguage does NOT work without adding one line to XOOPS/include/common.php (see guide below) 
+3 xlanguage does NOT have the ability of converting content from one character encoding to another if none of "iconv", "mb_string" or "xconv" is available. 
+
+# Features
+1 auto-detection of visitor's language on his first visitor 
+2 memorizing users' language preferences
+3 switching contents of different languages/encoding sets on-fly 
+4 supporting M-S-M mode for character encoding handler
 
 ![image001.jpg](assets/image001.jpg)
 *Figure 1: Main view of the xLanguage Module (Admin side)*
